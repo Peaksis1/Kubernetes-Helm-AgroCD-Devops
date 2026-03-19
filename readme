@@ -1,1 +1,13 @@
-new file
+Step 1. Create helm project -> helm create todolist
+
+configure deployment, values and chart
+
+
+Testing local
+1. minikube start
+2. helm install springboot ./springboot-app
+3. kubectl get pods
+
+4. minikube ip OR minikube service todolist 
+
+NOTE todolist is the service name we chose in nodeport

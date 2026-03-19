@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: prakharis1/todolist
+  tag: b54509689703e95d4b3b0d699459c5f0727b00f5
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 8080
+
+resources: {}
