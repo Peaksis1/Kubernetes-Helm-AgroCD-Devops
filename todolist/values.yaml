@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: prakharis1/todolist
-  tag: b54509689703e95d4b3b0d699459c5f0727b00f5
+  tag: e75e857e6cfa810929a92793673a29de556743ef
   pullPolicy: Always
 
 service:
