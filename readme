@@ -11,3 +11,22 @@ Testing local
 4. minikube ip OR minikube service todolist 
 
 NOTE todolist is the service name we chose in nodeport
+
+
+
+NOW AgroCD
+
+
+1. kubectl create namespace argocd
+2. install kubectl apply -n argocd \
+  -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+3. kubectl get pods -n agrocd
+
+4. kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+5. NOW CREATE application.yaml.. one time step to create and apply it
+
+6. kubectl apply -f application.yaml
+
+7. minikube ip... kubectl get svc to check status
